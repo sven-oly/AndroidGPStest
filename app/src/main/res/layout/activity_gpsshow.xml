@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".GPSshow">
+
+    <TextView
+        android:id="@+id/mheading"
+        android:text="@string/hello_world"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:text="Latitude"
+        android:id="@+id/mLatitudeText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/mheading"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_text_size_large_material" />
+    <TextView
+        android:text="Longitude"
+        android:id="@+id/mLongitudeText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/mLatitudeText"
+        android:layout_alignParentEnd="false"
+        android:textSize="@dimen/abc_text_size_large_material" />
+    <TextView
+        android:text="Last time"
+        android:id="@+id/mLastUpdateTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/mLongitudeText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_text_size_large_material" />
+    <TextView
+        android:text="Altitude"
+        android:id="@+id/mAltitude"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/mLastUpdateTimeTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_text_size_large_material"
+        />
+    <TextView
+        android:text="Accuracy"
+        android:id="@+id/mAccuracy"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/mAltitude"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_text_size_large_material"/>
+</RelativeLayout>
